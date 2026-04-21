@@ -57,8 +57,7 @@
                     <!-- </figure> -->
                 </div>
                 <div class="col" style="background-color: lightgray;">
-                    <h2 id="albumTitle" style="display: inline;">Abbey Road</h2>
-                    <span class="badge rounded-pill bg-primary">Genre</span>
+                    <h2 id="albumTitle">Abbey Road</h2>
 
                     <div>
                         <p class="album-summary">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
@@ -70,31 +69,69 @@
                             </div>
                         </li>
                         <li><strong>Release Date:</strong> 22 March 2013 (USA)</li>
+                        <li><strong>Duration:</strong> 47:03 minutes</li>
                     </ul>
 
-                    <div class="d-flex flex-column align-items-start gap-3 my-2">
-                        <button type="button" class="btn btn-success btn-lg">Artist Name</button>
+                    <div class="my-2">
+                        <button id="artistNameBtn" type="button" class="btn btn-success btn-lg">The Beatles</button>
                     </div>
+                    <div class="d-flex flex-wrap gap-2 my-2">
+                        <span class="badge bg-dark">Rock</span>
+                        <span class="badge bg-dark">Pop</span>
+                        <span class="badge bg-dark">Blues</span>
+                    </div>
+                    <!-- <span class="badge rounded-pill bg-primary">Genre</span> -->
+
 
                 </div>
             </div>
             <h2 class="section-title">Songs</h2>
             <hr class="border-dark border-3 opacity-75">
             <div class="row row-cols-1 row-cols-md-5 g-1 mb-5 text-center">
-                <div class="col song">Song Title</div>
-                <div class="col song">Song</div>
-                <div class="col song">Song</div>
-                <div class="col song">Song</div>
-                <div class="col song">Song</div>
-                <div class="col song">Song</div>
-                <div class="col song">Song</div>
-                <div class="col song">Song</div>
-                <div class="col song">Song</div>
-                <div class="col song">Song</div>
+                <div class="col song">Come Together</div>
+                <div class="col song">Here Comes the Sun</div>
+                <div class="col song">Something</div>
+                <div class="col song">The End</div>
+                <div class="col song">Oh! Darling</div>
+                <div class="col song">You Never Give Me Your Money</div>
+                <div class="col song">Her Majesty</div>
+                <div class="col song">Golden Slumbers</div>
+                <div class="col song">I Want You (She's So Heavy)</div>
+                <div class="col song">Sun King</div>
             </div>
-            <h2 class="section-title">Album's Reviews</h2>
+            <h2 class="section-title">Your Review</h2>
             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#writeReviewModal">Create/Edit My Review</button>
-            <label for="selectFilterAlbumRating">Filtrar por</label>
+            <hr class="border-dark border-3 opacity-75">
+            <div class="card mb-5">
+                <div class="card-header d-flex align-items-center">
+                    <div class="border border-primary p-2 text-truncate review-username h-100">
+                        Your Username
+                    </div>
+                    <div class="border border-primary p-2 ms-auto h-100">
+                        21 / 4 / 2026
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <div class="star-rating" style="--rating: 2.7;">
+                            ★★★★★  
+                        </div>
+                    </h5>
+                    <p class="card-text ellipse-truncate">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
+                            make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+                            Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of 
+                            Lorem Ipsum
+                    </p>
+                </div>
+                <div class="card-footer d-flex">
+                    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#viewReviewModal">See More</button>
+                </div>
+            </div>
+            <h2 class="section-title">Album's Other Reviews</h2>
+            <label class="text-primary" for="selectFilterAlbumRating">Filtrar por</label>
             <select name="rating" id="selectFilterAlbumRating">
                 <option value="1">★</option>
                 <option value="2">★★</option>
@@ -108,10 +145,10 @@
                     <div class="card h-100">
                         <div class="card-header d-flex align-items-center">
                             <div class="border border-primary p-2 text-truncate review-username h-100">
-                                Super ultra duper long username
+                                User 1
                             </div>
                             <div class="border border-primary p-2 ms-auto h-100">
-                                Upload Date
+                                21 / 4 / 2026
                             </div>
                         </div>
                         <div class="card-body">
@@ -121,18 +158,12 @@
                                 </div>
                             </h5>
                             <p class="card-text ellipse-truncate">
-                                This is a large amount of text that would normally exceed the card's 
-                                fixed height. Because of the overflow-hidden utility, any extra text 
-                                will be clipped and no scrollbar will appear.
-                                This is a large amount of text that would normally exceed the card's 
-                                fixed height. Because of the overflow-hidden utility, any extra text 
-                                will be clipped and no scrollbar will appear.
-                                This is a large amount of text that would normally exceed the card's 
-                                fixed height. Because of the overflow-hidden utility, any extra text 
-                                will be clipped and no scrollbar will appear.
-                                This is a large amount of text that would normally exceed the card's 
-                                fixed height. Because of the overflow-hidden utility, any extra text 
-                                will be clipped and no scrollbar will appear.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                 standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
+                                 make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                                  remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+                                  Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of 
+                                  Lorem Ipsum
                             </p>
                         </div>
                         <div class="card-footer d-flex">
@@ -144,10 +175,10 @@
                     <div class="card h-100">
                         <div class="card-header d-flex align-items-center">
                             <div class="border border-primary p-2 text-truncate review-username h-100">
-                                Super ultra duper long username
+                                User 2
                             </div>
                             <div class="border border-primary p-2 ms-auto h-100">
-                                Upload Date
+                                21 / 4 / 2026
                             </div>
                         </div>
                         <div class="card-body">
@@ -157,18 +188,12 @@
                                 </div>
                             </h5>
                             <p class="card-text ellipse-truncate">
-                                This is a large amount of text that would normally exceed the card's 
-                                fixed height. Because of the overflow-hidden utility, any extra text 
-                                will be clipped and no scrollbar will appear.
-                                This is a large amount of text that would normally exceed the card's 
-                                fixed height. Because of the overflow-hidden utility, any extra text 
-                                will be clipped and no scrollbar will appear.
-                                This is a large amount of text that would normally exceed the card's 
-                                fixed height. Because of the overflow-hidden utility, any extra text 
-                                will be clipped and no scrollbar will appear.
-                                This is a large amount of text that would normally exceed the card's 
-                                fixed height. Because of the overflow-hidden utility, any extra text 
-                                will be clipped and no scrollbar will appear.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                 standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
+                                 make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                                  remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+                                  Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of 
+                                  Lorem Ipsum
                             </p>
                         </div>
                         <div class="card-footer d-flex">
@@ -180,10 +205,10 @@
                     <div class="card h-100">
                         <div class="card-header d-flex align-items-center">
                             <div class="border border-primary p-2 text-truncate review-username h-100">
-                                Super ultra duper long username
+                                User 3
                             </div>
                             <div class="border border-primary p-2 ms-auto h-100">
-                                Upload Date
+                                21 / 4 / 2026
                             </div>
                         </div>
                         <div class="card-body">
@@ -193,18 +218,12 @@
                                 </div>
                             </h5>
                             <p class="card-text ellipse-truncate">
-                                This is a large amount of text that would normally exceed the card's 
-                                fixed height. Because of the overflow-hidden utility, any extra text 
-                                will be clipped and no scrollbar will appear.
-                                This is a large amount of text that would normally exceed the card's 
-                                fixed height. Because of the overflow-hidden utility, any extra text 
-                                will be clipped and no scrollbar will appear.
-                                This is a large amount of text that would normally exceed the card's 
-                                fixed height. Because of the overflow-hidden utility, any extra text 
-                                will be clipped and no scrollbar will appear.
-                                This is a large amount of text that would normally exceed the card's 
-                                fixed height. Because of the overflow-hidden utility, any extra text 
-                                will be clipped and no scrollbar will appear.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                 standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
+                                 make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                                  remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+                                  Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of 
+                                  Lorem Ipsum
                             </p>
                         </div>
                         <div class="card-footer d-flex">
@@ -216,10 +235,10 @@
                     <div class="card h-100">
                         <div class="card-header d-flex align-items-center">
                             <div class="border border-primary p-2 text-truncate review-username h-100">
-                                Super ultra duper long username
+                                User 4
                             </div>
                             <div class="border border-primary p-2 ms-auto h-100">
-                                Upload Date
+                                21 / 4 / 2026
                             </div>
                         </div>
                         <div class="card-body">
@@ -229,18 +248,12 @@
                                 </div>
                             </h5>
                             <p class="card-text ellipse-truncate">
-                                This is a large amount of text that would normally exceed the card's 
-                                fixed height. Because of the overflow-hidden utility, any extra text 
-                                will be clipped and no scrollbar will appear.
-                                This is a large amount of text that would normally exceed the card's 
-                                fixed height. Because of the overflow-hidden utility, any extra text 
-                                will be clipped and no scrollbar will appear.
-                                This is a large amount of text that would normally exceed the card's 
-                                fixed height. Because of the overflow-hidden utility, any extra text 
-                                will be clipped and no scrollbar will appear.
-                                This is a large amount of text that would normally exceed the card's 
-                                fixed height. Because of the overflow-hidden utility, any extra text 
-                                will be clipped and no scrollbar will appear.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                 standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
+                                 make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                                  remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+                                  Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of 
+                                  Lorem Ipsum
                             </p>
                         </div>
                         <div class="card-footer d-flex">
@@ -252,10 +265,10 @@
                     <div class="card h-100">
                         <div class="card-header d-flex align-items-center">
                             <div class="border border-primary p-2 text-truncate review-username h-100">
-                                Super ultra duper long username
+                                User 5
                             </div>
                             <div class="border border-primary p-2 ms-auto h-100">
-                                Upload Date
+                                21 / 4 / 2026
                             </div>
                         </div>
                         <div class="card-body">
@@ -265,18 +278,12 @@
                                 </div>
                             </h5>
                             <p class="card-text ellipse-truncate">
-                                This is a large amount of text that would normally exceed the card's 
-                                fixed height. Because of the overflow-hidden utility, any extra text 
-                                will be clipped and no scrollbar will appear.
-                                This is a large amount of text that would normally exceed the card's 
-                                fixed height. Because of the overflow-hidden utility, any extra text 
-                                will be clipped and no scrollbar will appear.
-                                This is a large amount of text that would normally exceed the card's 
-                                fixed height. Because of the overflow-hidden utility, any extra text 
-                                will be clipped and no scrollbar will appear.
-                                This is a large amount of text that would normally exceed the card's 
-                                fixed height. Because of the overflow-hidden utility, any extra text 
-                                will be clipped and no scrollbar will appear.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                 standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
+                                 make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                                  remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+                                  Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of 
+                                  Lorem Ipsum
                             </p>
                         </div>
                         <div class="card-footer d-flex">
@@ -288,10 +295,10 @@
                     <div class="card h-100">
                         <div class="card-header d-flex align-items-center">
                             <div class="border border-primary p-2 text-truncate review-username h-100">
-                                Super ultra duper long username
+                                User 6
                             </div>
                             <div class="border border-primary p-2 ms-auto h-100">
-                                Upload Date
+                                21 / 4 / 2026
                             </div>
                         </div>
                         <div class="card-body">
@@ -301,18 +308,12 @@
                                 </div>
                             </h5>
                             <p class="card-text ellipse-truncate">
-                                This is a large amount of text that would normally exceed the card's 
-                                fixed height. Because of the overflow-hidden utility, any extra text 
-                                will be clipped and no scrollbar will appear.
-                                This is a large amount of text that would normally exceed the card's 
-                                fixed height. Because of the overflow-hidden utility, any extra text 
-                                will be clipped and no scrollbar will appear.
-                                This is a large amount of text that would normally exceed the card's 
-                                fixed height. Because of the overflow-hidden utility, any extra text 
-                                will be clipped and no scrollbar will appear.
-                                This is a large amount of text that would normally exceed the card's 
-                                fixed height. Because of the overflow-hidden utility, any extra text 
-                                will be clipped and no scrollbar will appear.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                 standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
+                                 make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                                  remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+                                  Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of 
+                                  Lorem Ipsum
                             </p>
                         </div>
                         <div class="card-footer d-flex">
@@ -384,10 +385,10 @@
                     <div class="modal-header">
                         <!-- <h4 class="modal-title">Username's Review</h4> -->
                          <div class="border border-primary p-2 text-truncate w-50 h-100">
-                                Review by <span>You</span>
+                                Review by <span>User X</span>
                         </div>
                         <div class="border border-primary ms-auto p-2 h-100">
-                            Upload Date
+                            21 / 4 / 2026
                         </div>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
@@ -398,18 +399,12 @@
                         </div>
                         <div class="mb-3">
                             <p class="">
-                                This is a large amount of text that would normally exceed the card's 
-                                fixed height. Because of the overflow-hidden utility, any extra text 
-                                will be clipped and no scrollbar will appear.
-                                This is a large amount of text that would normally exceed the card's 
-                                fixed height. Because of the overflow-hidden utility, any extra text 
-                                will be clipped and no scrollbar will appear.
-                                This is a large amount of text that would normally exceed the card's 
-                                fixed height. Because of the overflow-hidden utility, any extra text 
-                                will be clipped and no scrollbar will appear.
-                                This is a large amount of text that would normally exceed the card's 
-                                fixed height. Because of the overflow-hidden utility, any extra text 
-                                will be clipped and no scrollbar will appear.
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                 standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
+                                 make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                                  remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
+                                  Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of 
+                                  Lorem Ipsum
                             </p>
                         </div>
                     </div>

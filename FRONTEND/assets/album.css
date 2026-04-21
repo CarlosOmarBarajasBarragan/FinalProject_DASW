@@ -58,3 +58,8 @@ body {
 .navbar-icon-btn {
     cursor: pointer;
 }
+
+#artistNameBtn {
+    background-color: darkslategrey;
+    color: darksalmon;
+}
