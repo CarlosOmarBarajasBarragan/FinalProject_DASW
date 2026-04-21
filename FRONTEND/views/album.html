@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="../assets/std_style.css">
         <link rel="stylesheet" href="../assets/album.css">
         <script defer src="./fontawesome/js/solid.js"></script>
         <script defer src="./fontawesome/js/regular.js"></script>
@@ -13,75 +14,37 @@
     </head>
     <body>
 
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Logo_del_ITESO.svg" alt="ITESO Logo" style="width:40px;" class="rounded-pill d-inline-block align-text-center">
-                    Placeholder
+         <nav class="navbar navbar-expand-sm navbar-dark navbar-custom">
+            <div class="container-fluid">
+                
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="../assets/musicLogo.png" alt="Logo" class="logo-img-custom"> 
+                    <span>Temporal Logo</span>
                 </a>
-                <button
-                    class="navbar-toggler d-lg-none"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapsibleNavId"
-                    aria-controls="collapsibleNavId"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="tasks.html" aria-current="page"
-                                >Tasks
-                                <span class="visually-hidden">(current)</span></a
-                            >
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a
-                                class="nav-link dropdown-toggle"
-                                href="#"
-                                id="dropdownId"
-                                data-bs-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                                >Tags</a
-                            >
-                            <div id="dropdownList"
-                                class="dropdown-menu"
-                                aria-labelledby="dropdownId"
-                            >
-                                <a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#dropdownModal"
-                                    ><i class="fa-solid fa-plus"></i>New tag</a
-                                >
-                                
-                            </div>
-                        </li> -->
-                    </ul>
-                    <form class="d-flex my-2 my-lg-0">
-                        <input
-                            class="form-control me-sm-2"
-                            type="text"
-                            placeholder="Search"
-                        />
-                        <button
-                            class="btn btn-outline-success my-2 my-sm-0"
-                            type="submit"
-                        >
-                            Search
+
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    
+                    <div class="mx-auto">
+                        <button class="btn btn-search-custom" type="button">
+                            <i class="fas fa-search me-2"></i>
+                            <span>Search</span>
                         </button>
-                    </form>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active navbar-icon-btn" data-bs-toggle="modal" data-bs-target="" title="Log off"><i class="fa-solid fa-sign-out"></i></a>
-                            
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active navbar-icon-btn" data-bs-toggle="modal" data-bs-target="" title="User Profile"><i class="fa-solid fa-user"></i></a>
-                            
-                        </li>
-                    </ul>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="me-3 d-flex align-items-center">
+                            <img src="../assets/profilePic.png" alt="Perfil" class="profile-img-custom"> 
+                        </a>
+
+                        <button id="logout" class="btn btn-logout-custom" type="button" title="Cerrar sesión" data-bs-toggle="modal" data-bs-target="#ModalLogout">
+                            <i class="fas fa-sign-out-alt"></i> 
+                        </button>
+                    </div>
+
                 </div>
             </div>
         </nav>
@@ -118,7 +81,7 @@
             <h2 class="section-title">Songs</h2>
             <hr class="border-dark border-3 opacity-75">
             <div class="row row-cols-1 row-cols-md-5 g-1 mb-5 text-center">
-                <div class="col song">Super ultra duper long song title</div>
+                <div class="col song">Song Title</div>
                 <div class="col song">Song</div>
                 <div class="col song">Song</div>
                 <div class="col song">Song</div>
@@ -131,15 +94,23 @@
             </div>
             <h2 class="section-title">Album's Reviews</h2>
             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#writeReviewModal">Create/Edit My Review</button>
+            <label for="selectFilterAlbumRating">Filtrar por</label>
+            <select name="rating" id="selectFilterAlbumRating">
+                <option value="1">★</option>
+                <option value="2">★★</option>
+                <option value="3">★★★</option>
+                <option value="4">★★★★</option>
+                <option value="5">★★★★★</option>
+            </select>
             <hr class="border-dark border-3 opacity-75">
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                     <div class="card h-100">
                         <div class="card-header d-flex align-items-center">
-                            <div class="border border-primary p-2 text-truncate w-60 h-100">
+                            <div class="border border-primary p-2 text-truncate review-username h-100">
                                 Super ultra duper long username
                             </div>
-                            <div class="border border-primary p-2 ms-auto w-40 h-100">
+                            <div class="border border-primary p-2 ms-auto h-100">
                                 Upload Date
                             </div>
                         </div>
@@ -172,10 +143,10 @@
                 <div class="col">
                     <div class="card h-100">
                         <div class="card-header d-flex align-items-center">
-                            <div class="border border-primary p-2 text-truncate w-60 h-100">
+                            <div class="border border-primary p-2 text-truncate review-username h-100">
                                 Super ultra duper long username
                             </div>
-                            <div class="border border-primary p-2 ms-auto w-40 h-100">
+                            <div class="border border-primary p-2 ms-auto h-100">
                                 Upload Date
                             </div>
                         </div>
@@ -208,10 +179,10 @@
                 <div class="col">
                     <div class="card h-100">
                         <div class="card-header d-flex align-items-center">
-                            <div class="border border-primary p-2 text-truncate w-60 h-100">
+                            <div class="border border-primary p-2 text-truncate review-username h-100">
                                 Super ultra duper long username
                             </div>
-                            <div class="border border-primary p-2 ms-auto w-40 h-100">
+                            <div class="border border-primary p-2 ms-auto h-100">
                                 Upload Date
                             </div>
                         </div>
@@ -244,10 +215,10 @@
                 <div class="col">
                     <div class="card h-100">
                         <div class="card-header d-flex align-items-center">
-                            <div class="border border-primary p-2 text-truncate w-60 h-100">
+                            <div class="border border-primary p-2 text-truncate review-username h-100">
                                 Super ultra duper long username
                             </div>
-                            <div class="border border-primary p-2 ms-auto w-40 h-100">
+                            <div class="border border-primary p-2 ms-auto h-100">
                                 Upload Date
                             </div>
                         </div>
@@ -280,10 +251,10 @@
                 <div class="col">
                     <div class="card h-100">
                         <div class="card-header d-flex align-items-center">
-                            <div class="border border-primary p-2 text-truncate w-60 h-100">
+                            <div class="border border-primary p-2 text-truncate review-username h-100">
                                 Super ultra duper long username
                             </div>
-                            <div class="border border-primary p-2 ms-auto w-40 h-100">
+                            <div class="border border-primary p-2 ms-auto h-100">
                                 Upload Date
                             </div>
                         </div>
@@ -316,10 +287,10 @@
                 <div class="col">
                     <div class="card h-100">
                         <div class="card-header d-flex align-items-center">
-                            <div class="border border-primary p-2 text-truncate w-60 h-100">
+                            <div class="border border-primary p-2 text-truncate review-username h-100">
                                 Super ultra duper long username
                             </div>
-                            <div class="border border-primary p-2 ms-auto w-40 h-100">
+                            <div class="border border-primary p-2 ms-auto h-100">
                                 Upload Date
                             </div>
                         </div>
@@ -348,6 +319,29 @@
                             <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#viewReviewModal">See More</button>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+         <div class="modal" id="ModalLogout">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+
+                <div class="modal-header">
+                <h4 class="modal-title">Cerrar sesión</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                ¿Seguro que deseas cerrar sesión?
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+
+                    <a href="#"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button></a>
+                </div>
+
                 </div>
             </div>
         </div>
@@ -388,7 +382,13 @@
                 <div class="modal-content">
                     
                     <div class="modal-header">
-                        <h4 class="modal-title">Username's Review</h4>
+                        <!-- <h4 class="modal-title">Username's Review</h4> -->
+                         <div class="border border-primary p-2 text-truncate w-50 h-100">
+                                Review by <span>You</span>
+                        </div>
+                        <div class="border border-primary ms-auto p-2 h-100">
+                            Upload Date
+                        </div>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
 
