@@ -2,40 +2,7 @@ body{
     background-image: linear-gradient(to bottom right, rgb(0, 0, 32), rgb(0, 0, 32));
     min-height: 100vh;
 }
-form{
-    padding: 20px;
-}
-form button[type="submit"] {
-    display: block;
-    margin: 0 auto;
-}
-form button[id="reg"] {
-    display: block;
-    margin: 0 auto;
-}
-form button[id="logout"] {
-    cursor:pointer
-}
-.rsm img{
-    float: left;
-    padding-right: 5px;
-    width: 80px;
-    height: 80px;
-}
-#div_padre {
-    padding: 5px;
-    display: flex;
-    flex-direction: row;   
-    flex-wrap: wrap;    
-    justify-content: space-evenly;
-    align-items: center;
-}
-.div_hijo {
-    padding: 5px;
-}
-button[id="plus"]{
-    position: fixed; bottom: 10px; right: 10px; height: 50px; width: 50px;
-}
+
 
 .navbar-custom {
     background-color: #000032;

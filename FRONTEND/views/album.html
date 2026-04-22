@@ -17,7 +17,7 @@
          <nav class="navbar navbar-expand-sm navbar-dark navbar-custom">
             <div class="container-fluid">
                 
-                <a class="navbar-brand d-flex align-items-center" href="#">
+                <a class="navbar-brand d-flex align-items-center" href="home.html">
                     <img src="../assets/musicLogo.png" alt="Logo" class="logo-img-custom"> 
                     <span>Temporal Logo</span>
                 </a>
@@ -51,16 +51,16 @@
 
         <div class="container my-5">
             <div class="row row-cols-1 row-cols-md-2 mb-5 g-1">
-                <div class="col">
+                <div class="col album-widget">
                     <!-- <figure> -->
-                        <img src="https://i.pinimg.com/736x/7b/c3/74/7bc3743023417102fb9058f90877b0f7.jpg" class="w-100 h-100 object-fit-fill" alt="#">
+                        <img src="../assets/BeatlesCoverArt.jpg" class="w-100 h-100 object-fit-fill" alt="#">
                     <!-- </figure> -->
                 </div>
-                <div class="col" style="background-color: lightgray;">
+                <div class="col d-flex flex-column album-summary album-widget">
                     <h2 id="albumTitle">Abbey Road</h2>
 
                     <div>
-                        <p class="album-summary">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                        <p class="album-info">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
                     </div>
                     <ul>
                         <li><strong>Rating:</strong> 
@@ -73,16 +73,15 @@
                     </ul>
 
                     <div class="my-2">
-                        <button id="artistNameBtn" type="button" class="btn btn-success btn-lg">The Beatles</button>
+                        <a href="artist.html">
+                            <button id="artistNameBtn" type="button" class="btn btn-success btn-lg">The Beatles</button>
+                        </a>
                     </div>
-                    <div class="d-flex flex-wrap gap-2 my-2">
-                        <span class="badge bg-dark">Rock</span>
-                        <span class="badge bg-dark">Pop</span>
-                        <span class="badge bg-dark">Blues</span>
+                    <div class="d-flex flex-wrap gap-2 mt-auto mb-2">
+                        <span class="badge bg-dark responsive-badge">Rock</span>
+                        <span class="badge bg-dark responsive-badge">Pop</span>
+                        <span class="badge bg-dark responsive-badge">Blues</span>
                     </div>
-                    <!-- <span class="badge rounded-pill bg-primary">Genre</span> -->
-
-
                 </div>
             </div>
             <h2 class="section-title">Songs</h2>
@@ -131,7 +130,7 @@
                 </div>
             </div>
             <h2 class="section-title">Album's Other Reviews</h2>
-            <label class="text-primary" for="selectFilterAlbumRating">Filtrar por</label>
+            <label class="text-primary" for="selectFilterAlbumRating">Filter by</label>
             <select name="rating" id="selectFilterAlbumRating">
                 <option value="1">★</option>
                 <option value="2">★★</option>
@@ -324,7 +323,7 @@
             </div>
         </div>
 
-         <div class="modal" id="ModalLogout">
+        <div class="modal" id="ModalLogout">
             <div class="modal-dialog modal-sm">
                 <div class="modal-content">
 

@@ -14,8 +14,31 @@ body {
     max-width: 60%;
 }
 
+@media(max-width: 767.98px) {
+    .album-info {
+        text-align: left;
+    }
+    .responsive-badge {
+        font-size: 1rem;
+    }
+}
+
+@media(min-width: 768px) {
+    .album-info {
+        text-align: justify;
+    }
+    .responsive-badge {
+        font-size: calc(1.275rem + 0.3vw);
+    }
+}
+
 .album-summary {
-    text-align: justify;
+    background-color: lightgray;
+}
+
+.album-widget {
+    max-height: 440px;
+    overflow-y: auto;
 }
 
 .song {
