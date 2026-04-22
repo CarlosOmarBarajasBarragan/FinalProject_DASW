@@ -2,42 +2,34 @@ img {
     max-height: 100%; 
 }
 
-/* Modificamos el slide para que actúe como una tarjeta */
 .swiper-slide {
-    background-color: #31285c; /* El morado oscuro de tu boceto */
-    width: 260px; /* Ajusta el ancho según prefieras */
-    height: auto; /* Dejamos que crezca según el texto */
+    background-color: #31285c; 
+    width: 260px; 
+    height: auto; 
     
-    /* LA MAGIA: Apilamos los elementos en columna (arriba hacia abajo) */
     display: flex;
     flex-direction: column; 
     justify-content: flex-start;
-    align-items: flex-start; /* Alineamos todo a la izquierda */
+    align-items: flex-start; 
     
-    padding: 15px; /* Damos un margen interno para que la imagen no toque los bordes */
-    border: 2px solid #1a103c; /* El borde oscuro que se ve en el diseño */
+    padding: 15px; 
+    border: 2px solid #1a103c; 
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    /* border-radius: 4px; Opcional si quieres las esquinas un poco menos afiladas */
 }
 
-/* 1. Quitamos el 'height' fijo y le damos padding para que pueda crecer según necesite */
 .swiper-container {
     width: 100%;
     padding: 50px 0; 
 }
 
-/* ... mantén tu bloque de .swiper-slide exactamente como lo tienes ... */
-
-/* 2. Le ponemos correa a la imagen para que sea un cuadrado perfecto */
 .swiper-slide img {
     display: block;
-    width: 100%;         /* Que ocupe el ancho de la tarjeta (los 260px) */
-    aspect-ratio: 1 / 1; /* Esto asegura que sea un cuadrado exacto */
+    width: 100%;  
+    aspect-ratio: 1 / 1; 
     object-fit: cover; 
-    margin-bottom: 15px; /* Separación con el texto del álbum */
+    margin-bottom: 15px; 
 }
 
-/* --- ESTILOS DEL TEXTO --- */
 .album-info {
     width: 100%;
     text-align: left;
@@ -47,30 +39,28 @@ img {
     color: white;
     font-weight: bold;
     font-size: 1.2rem;
-    margin-bottom: 2px; /* Muy poco espacio entre el título y la banda */
+    margin-bottom: 2px;
 }
 
 .album-artist {
-    color: #e0e0e0; /* Un blanco ligeramente más apagado o gris claro */
+    color: #e0e0e0;
     font-size: 0.95rem;
     margin-bottom: 0;
 }
 .album-year {
-    color: #e0e0e0; /* Un blanco ligeramente más apagado o gris claro */
+    color: #e0e0e0; 
     font-size: 0.95rem;
     margin-bottom: 0;
 }
 
-/* Paginación: Círculos inactivos */
 .swiper-pagination-bullet {
-    background-color: rgba(255, 255, 255, 0.5); /* Un blanco semitransparente */
-    opacity: 1; /* Forzamos la opacidad para que no se vean apagados */
-    width: 10px; /* Opcional: los hace un poquito más grandes */
+    background-color: rgba(255, 255, 255, 0.5); 
+    opacity: 1; 
+    width: 10px; 
     height: 10px;
 }
 
-/* Paginación: Círculo activo (el que indica en qué slide estás) */
 .swiper-pagination-bullet-active {
-    background-color: #0d6efd; /* Tu color azul actual, o cámbialo al que prefieras */
-    transform: scale(1.2); /* Opcional: hace que el punto activo sea un poco más grande */
+    background-color: #0d6efd; 
+    transform: scale(1.2); 
 }
