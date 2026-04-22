@@ -1,25 +1,55 @@
-img { 
-    max-height: 100%; 
-}
-
-.swiper-slide {
-    background-color: #31285c; 
-    width: 260px; 
-    height: auto; 
-    
-    display: flex;
-    flex-direction: column; 
-    justify-content: flex-start;
-    align-items: flex-start; 
-    
-    padding: 15px; 
-    border: 2px solid #1a103c; 
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+/* =========================================
+   1. CONTENEDOR Y ESTRUCTURA DE COLECCIÓN
+   ========================================= */
+.album-category-section {
+    margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 .swiper-container {
     width: 100%;
-    padding: 50px 0; 
+    padding: 20px 0; /* Quitamos el padding inferior excesivo */
+}
+
+/* =========================================
+   2. ENCABEZADO DE CATEGORÍA (Naranja)
+   ========================================= */
+.category-header {
+    background-color: #ff9800; 
+    display: inline-block;
+    padding: 8px 40px 8px 20px; 
+    margin-bottom: 20px;
+    margin-left: 5%; 
+    transform: skewX(-20deg); 
+}
+
+.category-title {
+    color: white;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transform: skewX(20deg); 
+}
+
+/* =========================================
+   3. TARJETAS (Slides Planos)
+   ========================================= */
+.swiper-slide {
+    background-color: #31285c; 
+    width: 260px; 
+    height: auto; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: flex-start; 
+    padding: 15px; 
+    border: 2px solid #1a103c; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+
+.swiper-slide:hover {
+    transform: translateY(-5px);
 }
 
 .swiper-slide img {
@@ -30,6 +60,9 @@ img {
     margin-bottom: 15px; 
 }
 
+/* =========================================
+   4. TEXTOS E INTERACCIÓN
+   ========================================= */
 .album-info {
     width: 100%;
     text-align: left;
@@ -40,27 +73,29 @@ img {
     font-weight: bold;
     font-size: 1.2rem;
     margin-bottom: 2px;
+    text-decoration: none; 
+    display: block;
+    transition: color 0.2s ease;
+}
+
+.album-title:hover {
+    color: #ff9800;
+    text-decoration: underline;
+}
+
+.album-subinfo {
+    display: flex;
+    align-items: center;
+    gap: 6px; 
+    margin-bottom: 0;
 }
 
 .album-artist {
     color: #e0e0e0;
     font-size: 0.95rem;
-    margin-bottom: 0;
 }
+
 .album-year {
-    color: #e0e0e0; 
-    font-size: 0.95rem;
-    margin-bottom: 0;
-}
-
-.swiper-pagination-bullet {
-    background-color: rgba(255, 255, 255, 0.5); 
-    opacity: 1; 
-    width: 10px; 
-    height: 10px;
-}
-
-.swiper-pagination-bullet-active {
-    background-color: #0d6efd; 
-    transform: scale(1.2); 
+    color: #a0a0a0; 
+    font-size: 0.90rem;
 }
