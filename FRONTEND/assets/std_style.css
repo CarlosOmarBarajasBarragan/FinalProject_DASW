@@ -42,6 +42,10 @@ body{
     object-fit: cover;
 }
 
+.navbar-custom .rPanel {
+    width: 250px; 
+    justify-content: flex-end; 
+}
 
 .navbar-custom .btn-logout-custom {
     color: white;

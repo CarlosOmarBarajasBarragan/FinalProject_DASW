@@ -22,6 +22,12 @@
         <script src="https://kit.fontawesome.com/43d99f2ee9.js" crossorigin="anonymous"></script>
 
 
+        <!-- SLIDER -->
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css'>
+    
+        <link rel="stylesheet" href="../assets/slider_style.css">
+
+
     </head>
 
     <body>
@@ -43,14 +49,14 @@
                     <div class="collapse navbar-collapse" id="mynavbar">
                         
                         <div class="mx-auto">
-                            <button class="btn btn-search-custom" type="button">
+                            <a href="TU_OTRA_PAGINA.html" class="btn btn-search-custom text-decoration-none" role="button">
                                 <i class="fas fa-search me-2"></i>
                                 <span>Search</span>
-                            </button>
+                            </a>
                         </div>
 
-                        <div class="d-flex align-items-center">
-                            <a href="P01_home.html" class="me-3 d-flex align-items-center">
+                        <div class="d-flex align-items-center rPanel">
+                            <a href="P01_home.html" class="me-3 d-flex align-items-center text-decoration-none">
                                 <img src="../assets/profilePic.png" alt="Perfil" class="profile-img-custom"> 
                             </a>
 
@@ -66,7 +72,38 @@
         </header>
         <main>
 
-            
+
+
+            <!-- SLIDER -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <img src="../assets/RTL.jpg" alt="Ride The Lightning" />
+                        
+                        <div class="album-info">
+                            <p class="album-title">Ride The Lightning</p>
+                            <span class="album-artist">Metallica</span>
+                            <span class="album-year">(1984)</span>
+                        </div>
+                    </div>
+
+
+
+                    <div class="swiper-slide"><img src="https://placehold.it/666x666" alt="Placeholder"/></div>
+                    <div class="swiper-slide"><img src="https://placehold.it/666x666" alt="Placeholder"/></div>
+                    <div class="swiper-slide"><img src="https://placehold.it/666x666" alt="Placeholder"/></div>
+                    <div class="swiper-slide"><img src="https://placehold.it/666x666" alt="Placeholder"/></div>
+                    <div class="swiper-slide"><img src="https://placehold.it/666x666" alt="Placeholder"/></div>
+                    <div class="swiper-slide"><img src="https://placehold.it/666x666" alt="Placeholder"/></div>
+                    <div class="swiper-slide"><img src="https://placehold.it/666x666" alt="Placeholder"/></div>
+                    <div class="swiper-slide"><img src="https://placehold.it/666x666" alt="Placeholder"/></div>
+                    <div class="swiper-slide"><img src="https://placehold.it/666x666" alt="Placeholder"/></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+
 
         </main>
         <footer>
@@ -85,33 +122,13 @@
             crossorigin="anonymous"
         ></script>
 
-        <div class="modal" id="ModalTag">
-            <div class="modal-dialog modal-sm">
-                <div class="modal-content">
 
-                <div class="modal-header">
-                    <h4 class="modal-title">Nueva etiqueta</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
+        <!-- SLIDER -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js'></script>
+        
+        <script src="../controllers/slider_controller.js"></script>
 
-                <div class="modal-body">
-                        <div class="mb-3 mt-3">
-                        <label for="name" class="form-label">Nombre</label>
-                        <input type="name" class="form-control" id="name" name="name">
-            
-                        <label for="color" class="form-label">Color</label>
-                        <input type="color" class="form-control" id="color"name="color">
-                        </div>
-                </div>
-
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Crear etiqueta</button>
-                </div>
-
-                </div>
-            </div>
-        </div> 
 
         <div class="modal" id="ModalLogout">
             <div class="modal-dialog modal-sm">
