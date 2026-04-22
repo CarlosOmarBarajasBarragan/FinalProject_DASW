@@ -17,6 +17,7 @@ body {
 @media(max-width: 767.98px) {
     .album-info {
         text-align: left;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
     .responsive-badge {
         font-size: 1rem;
@@ -26,6 +27,7 @@ body {
 @media(min-width: 768px) {
     .album-info {
         text-align: justify;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
     .responsive-badge {
         font-size: calc(1.275rem + 0.3vw);
@@ -45,8 +47,13 @@ body {
     border: solid #3D2C58;
     border-radius: 10px;
     background-color: aquamarine;
+    color: navy;
     height: 60px;
     overflow-y: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .section-title {
