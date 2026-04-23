@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+
+@media(max-width: 767.98px) {
+    .artist-info {
+        text-align: left;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .responsive-badge {
+        font-size: 1rem;
+    }
+}
+
+@media(min-width: 768px) {
+    .artist-info {
+        text-align: justify;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .responsive-badge {
+        font-size: calc(1.275rem + 0.3vw);
+    }
+}
+
+.artist-summary {
+    background-color: lightgray;
+}
+
+.artist-widget {
+    max-height: 440px;
+    overflow-y: auto;
+}
+
+.section-title {
+    color: darkseagreen;
+}
+
+.ratio-2x3 {
+    --bs-aspect-ratio: 150%;
+}

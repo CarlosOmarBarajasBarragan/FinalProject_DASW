@@ -1,0 +1,177 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background: radial-gradient(circle at center, #100d33 0%, #040212 100%);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.left-panel {
+    flex: 1;
+    background-color: #291e5c;
+    border-radius: 20px;
+    height: 90%;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.left-panel h2 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.right-panel {
+    width: 350px;
+    background-color: #291e5c;
+    border-radius: 30px;
+    padding: 2.5rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+.welcome-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ffcc33 0%, #ff9900 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ffcc33;
+    margin-right: 1rem;
+}
+
+.welcome-logo i {
+    color: white;
+    font-size: 1.8rem;
+}
+
+.welcome-text {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.welcome-text .line1 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.welcome-text .line2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+/* --- Formulario --- */
+.login-form {
+    width: 100%;
+}
+
+/* Grupos de Campo */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.form-group label {
+    color: white;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    background: linear-gradient(180deg, #f0a331 0%, #b57a25 100%);
+    border: 1px solid #7a5010; /* Borde oscuro fino */
+    color: white;
+    border-radius: 8px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  
+    box-shadow: inset 0 -4px 6px rgba(0, 0, 0, 0.4); 
+}
+
+.form-group input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* --- Grupo de Botones --- */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+/* Botones Naranjas */
+.button-group button {
+    flex: 1;
+    background: linear-gradient(180deg, #ff9900 0%, #ff6600 100%);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+
+.button-group button:hover {
+    background: linear-gradient(180deg, #ffaa33 0%, #ff7733 100%);
+}
+
+.footer-text {
+    position: fixed;
+    bottom: 1rem;
+    right: 1.5rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.75rem;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.right-panel {
+    max-height: 95vh;
+    overflow-y: auto;
+}
+
+.form-section {
+    width: 100%;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
