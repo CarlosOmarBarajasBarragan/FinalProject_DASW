@@ -3,7 +3,6 @@ body{
     min-height: 100vh;
 }
 
-
 .navbar-custom {
     background-color: #000032;
     padding: 0.5rem 1rem;
@@ -43,6 +42,10 @@ body{
     object-fit: cover;
 }
 
+.navbar-custom .rPanel {
+    width: 250px; 
+    justify-content: flex-end; 
+}
 
 .navbar-custom .btn-logout-custom {
     color: white;
