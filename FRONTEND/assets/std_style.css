@@ -1,8 +1,14 @@
 body {
     background-image: linear-gradient(to bottom right, rgb(0, 0, 32), rgb(0, 0, 32));
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
+.row {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
 .navbar-custom {
     background-color: #000032;
     padding: 0.5rem 1rem;
