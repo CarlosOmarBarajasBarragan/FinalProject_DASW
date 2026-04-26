@@ -1,4 +1,4 @@
-body{
+body {
     background-image: linear-gradient(to bottom right, rgb(0, 0, 32), rgb(0, 0, 32));
     min-height: 100vh;
 }
@@ -13,28 +13,25 @@ body{
     margin-right: 10px;
 }
 
-.navbar-custom .btn-search-custom {
-    background-color: #3b2c70;
+.navbar-custom .nav-search-btn-only {
+    background-color: #3b2c70; 
     color: white;
-    border: none;
-    border-radius: 6px;
-    width: 300px;
-    max-width: 100%;
-    padding: 8px 15px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-start; 
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.2s ease;
 }
 
-.navbar-custom .btn-search-custom i {
+.navbar-custom .nav-search-btn-only:hover {
+    background-color: #ff9800; 
     color: white;
+    transform: scale(1.1); 
 }
-
-.navbar-custom .btn-search-custom:hover {
-    background-color: #4b3c80;
-    color: white;
-}
-
 
 .navbar-custom .profile-img-custom {
     width: 40px;
