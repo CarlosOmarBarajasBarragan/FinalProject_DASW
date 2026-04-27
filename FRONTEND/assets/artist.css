@@ -2,6 +2,10 @@ body {
     margin: 0;
 }
 
+/* .albumcover-card-body {
+    background-color: #31285c;
+} */
+
 @media(max-width: 767.98px) {
     .artist-info {
         text-align: left;
@@ -23,16 +27,23 @@ body {
 }
 
 .artist-summary {
-    background-color: lightgray;
+    /* background-color: #291e5c; */
+    color: white;
+    /* border-radius: 20px; */
+    padding: 2.5rem;
 }
 
 .artist-widget {
+    background-color: #291e5c;
     max-height: 440px;
     overflow-y: auto;
+    border-radius: 20px;
 }
 
 .section-title {
-    color: darkseagreen;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 .ratio-2x3 {
